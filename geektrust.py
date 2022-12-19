@@ -31,11 +31,12 @@ def generate_bill(cart,discount):
     if generated_amount >= 1000:
         for price,dis in zip(cart,discount):
             discount_amount += price*dis/100
-    #An additional discount of 5% can be applied if the total amount to pay is 3000 rupees or more.
+            
+    #An additional discount of 5% can be applied if the total amount to pay is 3000 rupees or more.   
+    generated_amount -= discount_amount
     if generated_amount >= 3000:
         discount_amount += generated_amount*5/100
-       
-    generated_amount -= discount_amount
+        generated_amount -= generated_amount*5/100
     #There is a 10% sales tax on total bill, after calculation taxes
     tax = calculate_tax(generated_amount)
     final_amount = tax + generated_amount
