@@ -34,6 +34,17 @@ Internally both the scripts run the following commands
  
 Run `run.sh` or `run.bat` in your local machine to ensure your solution is working correctly. Once confirmed please uplaod it in Geektrust and check for the test cases.
 
+# Screenshots of the Terminal Console
+
+To run multiple test cases in Linux use the below command:
+
+```py
+sh run.sh
+```
+
+![Screenshot from 2022-12-19 18-43-52](https://user-images.githubusercontent.com/121029146/208434296-f12fe52b-6f62-4aa0-8499-e048bc9363f5.png)
+
+
 # Help
 
 * You can refer our help documents [here](https://help.geektrust.com)
